@@ -1,0 +1,232 @@
+body {
+    background-color: #bbbbbb;
+
+
+}
+
+
+header {}
+
+* {
+    box-sizing: border-box;
+}
+
+.image-box {
+    position: relative;
+    width: 1300px;
+    margin: 50px auto 0;
+    background-color: black;
+}
+
+
+
+h2 {
+    color: white;
+    padding: 20px 200px;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+
+.image-box p {
+    color: white;
+    font-size: 21px;
+    font-family: 'Cormorant Garamond', serif;
+    padding: 10px;
+}
+
+.post-wrap {
+    max-width: 1120px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.post-item {
+    padding: 10px;
+}
+
+.post-link {
+    text-decoration: none;
+    display: block;
+}
+
+.post-item-wrap {
+    overflow: hidden;
+    position: relative;
+}
+
+.post-item img {
+    display: block;
+    width: 320px;
+    height: 540px;
+}
+
+.text-wrapper {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 86%;
+    padding: 20px;
+    background: black;
+    transform: translate3d(-100%, 0, 0);
+    transition: transform .5s cubic-bezier(.33, .02, 0, .93);
+}
+
+.post-item:hover .text-wrapper {
+    transform: translate3d(0, 0, 0);
+    transition: transform .5s cubic-bezier(.33, .02, 0, .93) .3s;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background: #bbbbbb;
+    transform: translate3d(-100%, 0, 0);
+    transition: transform .4s cubic-bezier(.33, .02, 0, .93) .2s;
+}
+
+.post-item:hover .overlay {
+    transform: translate3d(0, 0, 0);
+    transition: transform .5s cubic-bezier(.33, .02, 0, .93);
+}
+
+.post-cat {
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    color: white;
+    font-weight: 200;
+    text-align: center;
+}
+
+h4 {
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    color: white;
+    font-weight: 200;
+    text-align: center;
+}
+
+.post-title {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    color: white;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+footer {
+    position: relative;
+    /*относительноепозиционирование*/
+    width: 100%;
+    /*навсюширину*/
+    height: 400px;
+    padding: 20px 50px;
+    /*полядляконтента*/
+    background: red;
+    /*цветфутера*/
+    display: flex;
+    justify-content: center;
+    /*вцентрепогоризонтали*/
+    align-items: center;
+    /*вцентреповертикали*/
+    flex-direction: column;
+    margin-top: 100px;
+    /*отступсверху*/
+    border-radius: 1px black;
+    -webkit-border-radius: ;
+    -moz-border-radius: ;
+    -ms-border-radius: ;
+    -o-border-radius: ;
+    border-top: 2px solid black;
+}
+
+footer .wave {
+    position: absolute;
+    /*абсолютное позиционирование*/
+    left: 0;
+    width: 100%;
+    height: 100px;
+
+}
+
+.wave img {
+    width: 350px;
+    height: 210px;
+    padding: 0 0 0 30px;
+    margin: 0 30px 30px 0;
+    color: black;
+    float: left;
+
+}
+
+
+.menu {
+    color: black;
+    float: left;
+    width: 400px;
+    padding: 0 0 0 30px;
+    margin: 0 30px 30px 0;
+
+}
+
+
+.social img{
+    width: 50px;
+    height: 75px;
+    padding: 0 0 0 30px;
+    margin: 0 80px 30px 0;
+    color: black;
+   
+
+}
+
+.menu li {
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: -20px;
+    line-height: 10px;
+    transition: .3s linear;
+}
+
+.social li img {
+    height: 12px;
+    color: #000;
+    /*цвет иконок*/
+    margin: 0 10px;
+
+}
+
+.menu li img {
+    font-size: 12px;
+    /*размер ссылок меню*/
+    color: #000;
+    /*цвет ссылок меню*/
+    opacity: 0.75;
+    /*значение прозрачности*/
+    margin: 0 15px;
+    text-decoration: none;
+    /*ссылка без подчеркивания*/
+    display: inline-block;
+}
+
+.menu li img:hover {
+    opacity: 1;
+}
+
+footer p {
+    color: #fff;
+    float: right;
+    text-align: left;
+    margin-top: 15px;
+    font-size: 1.1em;
+}
